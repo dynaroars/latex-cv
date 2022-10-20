@@ -1,0 +1,1 @@
+Creating a professional CV using LaTeX and BibTeX.  For details, see https://nguyenthanhvuh.github.io/posts/cv.html.
