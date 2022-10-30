@@ -40,7 +40,7 @@
 \item Email: \href{mailto:\myemailwork}{\myemailwork}
 \item Web: \url{\myweb}
 }
-
+\newcommand{\mygrant}[1]{\item~\label{#1} \fullcite{\detokenize{#1}}}
 \newcommand{\mypubcc}[1]{\item~\label{#1} \fullcite{\detokenize{#1}c}}
 \newcommand{\mypubc}[2]{\item~\label{#1} \fullcite{#1c}\coe{, contribution #2}}   %label,contribution percentage (optional)
 
@@ -445,22 +445,23 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \end{table}
 
 \begin{enumerate}
-\item ``Analysis of CMake Build files using Symbolic Execution'', Facebook/Whatsapp unrestricted gift, 2021--,  \$30K (total, sole PI). PI: Nguyen
+  \mygrant{fb2022cmake}
+
+  \mygrant{nsf2022dtemporal}
+  % \begin{description}
+  % \item[Description] We proposed to develop techniques that use dynamically inferred invariants to analyze program safety and liveness properties.
+  % \end{description}
+
+  \mygrant{nsf2020kbuild}
+  % \begin{description}
+  % \item[Description] We proposed to develop symbolic and dynamic techniques to analyze the Linux KBuild system.
+  % \end{description}
   
-\item ``Collaborative: Medium: Ensuring Safety and Liveness of Modern Systems through Dynamic Temporal Analysis'', NSF (\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2107035}{2107035}), 7/15/2021--7/14/2024, \$1.2M (\$400K, PI). PI's: Nguyen, Koskinen, Le, Antonopoulos.
-  \begin{description}
-  \item[Description] We proposed to develop techniques that use dynamically inferred invariants to analyze program safety and liveness properties.
-  \end{description}
-
-\item ``CRII: Analyzing Linux KBuild Makefiles'', NSF (\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948536}{1948536}), 4/1/2020--3/31/2022, \$175K (total, sole PI). PI: Nguyen.
-  \begin{description}
-  \item[Description] We proposed to develop symbolic and dynamic techniques to analyze the Linux KBuild system.
-  \end{description}
-
-\item ``Predictive Failure Avoidance'', ARO (W911NF1910054, subcontracted from UVA to UNL), \$550K (my portion \$160K). Co-PI: Nguyen (PI: Matthew Dwyer)
-  \begin{description}
-  \item[Description] We proposed to develop techniques to predict and avoid program errors.
-  \end{description}
+  \mygrant{aro2018predict}
+%\item ``Predictive Failure Avoidance'', ARO (W911NF1910054, subcontracted from UVA to UNL), \$550K (my portion \$160K). Co-PI: Nguyen (PI: Matthew Dwyer)
+  % \begin{description}
+  % \item[Description] We proposed to develop techniques to predict and avoid program errors.
+  % \end{description}
 \end{enumerate}
 
 
