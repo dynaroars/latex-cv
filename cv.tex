@@ -1,6 +1,13 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 \usepackage[doi=false,isbn=false,maxcitenames=10,maxbibnames=10,abbreviate=false,style=alphabetic]{biblatex}
 \addbibresource{cv.bib}
+
+%\usepackage[small,compact]{titlesec} %very powerful
+\usepackage{palatino}
+%\usepackage{times}
+
+\usepackage{setspace}
+\linespread{1.05}
 
 \newtoggle{usecoe}
 \settoggle{usecoe}{false}
@@ -167,7 +174,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \notcoe{
   \subsection{Research Interests}
-  Software Engineering; Programming Languages; Software Testing, Verification, and Analysis; Software Correctness and Reliability; Dynamic Invariant Generation; Automatic Program Repair.  
+  Software Engineering; Programming Languages; Software Testing, Verification, and Analysis; Dynamic Invariant Generation; Automatic Program Repair.  
 }
 
 \subsection{Publication Record}
@@ -177,7 +184,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \item \(^1\), \(^2\), \(^3\) denote co-authorship with my undergraduate, M.S., and Ph.D. students, respectively.
 \item  \textbf{Bold journal and conference names} indicate full research papers at top-tier venues (e.g., TSE, OOPSLA, ICSE, FSE, PLDI). See \href{https://csrankings.org}{csrankings.org} for top CS conferences.
 \item In computer science, full research conference papers are full-length and rigorously reviewed by at least three peers. Top-tier conferences have acceptance rates comparable to or even lower than leading journals.
-\item Citations (\mygooglescholar{}): 3228, h-index 15, i10-index 22 (as of Oct'22).  
+\item Citations (\mygooglescholar{}): 3282, h-index 16, i10-index 22 (as of Dec'22).  
 \end{itemize}
 
 \emergencystretch=1em
@@ -596,18 +603,8 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \newcommand{\linhan}{
 \item Linhan Li \notcoe{(Ph.D.)}\hfill Spring 2021--current
-  \begin{itemize}
-  \item UCARE award
-  \end{itemize}
 }
 
-
-\newcommand{\maxnguyen}{
-\item Max (Quan) Nguyen \notcoe{(Undergraduate)}\hfill Fall 2020--Summer 2021
-  \begin{itemize}
-  \item UCARE award
-  \end{itemize}
-}
 
 
 \newcommand{\kimhao}{
@@ -617,7 +614,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \item Winner, College of Arts and Science, Nebraska Student Research Days (for the GenTree work~\ref{nguyen2021gentree})\hfill Spring 2021
   \item UCARE award and paid hourly through research grants
   \item Garmin Computer Engineering scholarship
-  \item Co-author of~\ref{nguyen2022analyzing},~\ref{ishimwe2022dynaplex},~\ref{nguyen2022syminfer},\ref{ishimwe2021dynaplex},~\ref{nguyen2021gentree},~\ref{nguyen2021tool},~\ref{nguyen2020using2},~\ref{nguyen2021using}
+  \item Co-author of~\ref{nguyen2022analyzing},~\ref{ishimwe2022dynaplex},~\ref{nguyen2022syminfer},~\ref{ishimwe2021dynaplex},~\ref{nguyen2021gentree},~\ref{nguyen2021tool},~\ref{nguyen2020using2},~\ref{nguyen2021using}
   \end{itemize}
 }
 
@@ -671,35 +668,16 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \end{enumerate}
 
   \subsection{M.S. Students}
-  \subsubsection{Graduated}
-  \begin{enumerate}  
-  \item Mitch Girrard (UNL), co-advised with Matthew Dwyer\hfill graduated: Fall 2019
-    \begin{itemize}
-    \item continued on Ph.D. program at UVA
-    \end{itemize}
-  \alex{}
-  \end{enumerate}  
+  % \subsubsection{Graduated}
+  % \begin{enumerate}  
+  % \alex{}
+  % \end{enumerate}  
 
   % \subsubsection{Current}
   % \begin{enumerate}
   % \item None
   % \end{enumerate}
 
-  \subsection{Undergraduate Students}
-  \subsubsection{Independent Research Study}
-
-  \begin{enumerate}
-    \kimhao{}
-    \maxnguyen{}    
-  \item Linhan Li, UCARE award\hfill Spring 2021--current 
-  \item Quan Nguyen, UCARE award\hfill Fall 2020--current
-  \item Ben Galusha, NSF REU and paid hourly through research grants\hfill Summer 2020--current
-  \item Ethan Butt, Honor Thesis\hfill Fall 2019 
-  \item Conner Hallett, UCARE award\hfill Spring 2019, Fall 2019
-  \item Chase Pearson, paid hourly through research grants\hfill Fall 2018 
-  \item Nancy Pham (female),  paid hourly through research grants\hfill Fall 2017
-  \item Zixuan Hao (female), paid hourly through research grants\hfill Summer 2017 
-  \end{enumerate}
 
   \subsubsection{Yearly Average}
   \begin{itemize}
@@ -719,7 +697,6 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \end{enumerate}
 
   \subsubsection{M.S. Committees}
-  \label{sec:orgf0f85e7}
   \begin{enumerate}
   \item Cole Peterson, UNL\hfill graduated: Spring 2020
   \item Mitchell Gerrard, UNL\hfill graduated: Fall 2019
@@ -752,8 +729,16 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \begin{enumerate}
     \guolong{}
     \alex{}
-  \end{enumerate}  
+  \item Mitch Girrard (UNL), co-advised with Matthew Dwyer\hfill graduated: Fall 2019
+    \begin{itemize}
+    \item continued on Ph.D. program at UVA
+    \end{itemize}
+    
+    \item \textbf{Undergraduate Research}: Max Nguyen (UCARE), Linhan Li (UCARE, continued on Ph.D. program at GMU), Quan Nguyen (UCARE), Ben Galusha (NSF REU), Ethan Butt (Honor Thesis), Conner Hallett (UCARE), Chase Pearson, Nancy Pham, Zixuan Hao.
+  \end{enumerate}
 }
+
+
 
 \subsection{Other Teaching Accomplishments}
 \begin{enumerate}
