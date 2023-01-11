@@ -1,19 +1,22 @@
-\documentclass[10pt]{article}
-\usepackage[doi=false,isbn=false,maxcitenames=10,maxbibnames=10,abbreviate=false,style=alphabetic]{biblatex}
+\documentclass[11pt]{article}
+\usepackage[backend=bibtex,doi=false,isbn=false,maxcitenames=10,maxbibnames=10,abbreviate=false,style=alphabetic]{biblatex}
+
 \addbibresource{cv.bib}
 
 %\usepackage[small,compact]{titlesec} %very powerful
 \usepackage{palatino}
-%\usepackage{times}
 
 \usepackage{setspace}
-\linespread{1.05}
+\linespread{1.07}
 
 \newtoggle{usecoe}
 \settoggle{usecoe}{false}
 \newcommand{\coe}[1]{\iftoggle{usecoe}{#1}{}}
 \newcommand{\notcoe}[1]{\nottoggle{usecoe}{#1}{}}
 \newcommand{\coeite}[2]{\iftoggle{usecoe}{#1}{#2}}
+
+\usepackage{xcolor}  
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize\color{gray}Last updated on #1}}
 
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
@@ -37,7 +40,7 @@
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 \usepackage[margin=0.8in]{geometry}
 
-\newcommand{\myname}{ThanhVu Huy Nguyen}
+\newcommand{\myname}{ThanhVu (Vu) Huy Nguyen}
 \newcommand{\mynamevn}{Nguy$\tilde{\hat{\text{e}}}$n Huy ThanhV$\tilde{\text{u}}$}
 \newcommand{\myemail}{nguyenthanhvuh@gmail.com}
 \newcommand{\myemailwork}{tvn@gmu.edu}
@@ -60,6 +63,8 @@
 \end{center}
 
 \tableofcontents
+\updateinfo{}
+  
 \newpage
 \setcounter{page}{1}
 
@@ -99,7 +104,7 @@
       \end{description}
     \item Contact Info:
       \begin{itemize}
-        \item Nguyen Engineering Building 4430, 4400 University Drive, Fairfax, VA 22030
+        \item Nguyen Engineering Building \#4430, 4400 University Drive, Fairfax, VA 22030
         \emailweb{}
       \end{itemize}
     \item Citizenship: U.S
@@ -112,11 +117,10 @@
     \includegraphics[width=0.4\textwidth]{tvn.png}
   \end{minipage}
 
-  \paragraph{Bio.} ThanhVu Nguyen is an assistant professor in the Department of Computer Science at George Mason University. 
-  Prior to joining GMU, he was at the University of Nebraska-Lincoln. He received his Ph.D. in Computer Science from the University of New Mexico-Albuquerque and completed a two-year postdoc at the University of Maryland-College Park.
-
-  His research is in the intersection of Software Engineering and Programming Languages. In particular, he focuses on improving software quality through dynamic invariant inference,  automatic program repair, and highly-configurable systems analysis.
-He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) Award, a 10-year Most Influential Paper award (at ICSE 2019), and a 10-year Most Impact Paper Award (at GECCO 2019).
+  \paragraph{Bio.}  ThanhVu (Vu) Nguyen is an assistant professor in the Department of
+  Computer Science at George Mason University. Before that, he was at the University of Nebraska-Lincoln.  He completed his Ph.D. in Computer Science at the University of New Mexico-Albuquerque and a postdoc at the University of Maryland-College Park.
+  
+  Prof. Nguyen's research lies in the intersection of software engineering, programming languages, and formal methods, with a particular focus on deep neural network verification, dynamic invariant generation, and automatic program repair. He has received serveral awards for his work, including an NSF CAREER Award, an NSF CRII Award, an ACM SIGSOFT/IEEE TCSE Most Influential Paper Award, an ACM SIGEVO Impact Paper Award,  a Sigma Xi Award for Excellence in Research, a CACM Research Highlight, an IFIP TC2 Manfred Paul Award for Excellence in Software: Theory and Practice, an ACM SIGEVO ``Humies'' Gold Medal Award, and various Distinguished and Best Paper Awards.
 }
 
 \section{Education and Employment History}
@@ -135,7 +139,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \item Advisers: Stephanie Forrest and Deepak Kapur
   \item Dissertation: Automatic Program Repair and Dynamic Invariant Generation~[\ref{nguyen2014automating}]
   \end{description}
-
+  
 \item \textbf{M.S.}, Computer Science,  \href{https://www.hbg.psu.edu}{Penn State University}, Harrisburg, PA\hfill 2003--2006
   \begin{description}
   \item Adviser: Thang N. Bui
@@ -148,7 +152,13 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \begin{itemize}
   \item \href{https://www.bishopmcdevitt.org/mcd/}{Bishop McDevitt}, Harrisburg, PA \hfill 1997--1999
   \item \href{https://www.mckinley.k12.hi.us/}{McKinley High School}, Honolulu, HI \hfill 1995--1997  
-\end{itemize}
+  \end{itemize}
+\item \textbf{Middle School}
+  \begin{itemize}
+  \item Central Intermediate (now \href{https://www.keelikolanimiddle.org}{Ke'elikolani Middle School}), Honolulu, HI
+  \item \href{http://colette.edu.vn/}{Colette}, Saigon, VN
+  \end{itemize}
+  
 \end{itemize}
 
 
@@ -156,7 +166,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \begin{itemize}
 \item Assistant Professor, Department of Computer Science, \href{https://cs.gmu.edu}{George Mason University}\hfill 2021--current  
-\item Assistant Professor, School of Computing, \href{https://computing.unl.edu}{University of Nebraska-Lincoln}\hfill 2016--2021
+\item Assistant Professor, Department of Computer Science, \href{https://computing.unl.edu}{University of Nebraska-Lincoln}\hfill 2016--2021
 \item Postdoc, Department of Computer Science, \href{https://www.cs.umd.edu}{University of Maryland-College Park}\hfill 2014--2016
 \item Research Assistant, Dept. of Computer Science, \href{https://www.cs.unm.edu}{University of New Mexico-Albuquerque}\hfill 2007--2014
 \item Internship, Information Technology Division, \href{https://www.nrl.navy.mil}{Naval Research Laboratory}\hfill 2012--2013
@@ -174,7 +184,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \notcoe{
   \subsection{Research Interests}
-  Software Engineering; Programming Languages; Software Testing, Verification, and Analysis; Dynamic Invariant Generation; Automatic Program Repair.  
+  Software Engineering; Programming Languages; Formal Methods; Software Testing, Verification, and Analysis; DNN Verification and Analysis; Dynamic Invariant Generation; Automatic Program Repair.  
 }
 
 \subsection{Publication Record}
@@ -182,9 +192,9 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \paragraph{Notes:}
 \begin{itemize}
 \item \(^1\), \(^2\), \(^3\) denote co-authorship with my undergraduate, M.S., and Ph.D. students, respectively.
-\item  \textbf{Bold journal and conference names} indicate full research papers at top-tier venues (e.g., TSE, OOPSLA, ICSE, FSE, PLDI). See \href{https://csrankings.org}{csrankings.org} for top CS conferences.
+\item  \textbf{Bold journal and conference names} indicate full research papers at top-tier venues, e.g., TSE, ICSE, FSE, PLDI, OOPSLA. See \href{https://csrankings.org}{csrankings.org} for top CS conferences.
 \item In computer science, full research conference papers are full-length and rigorously reviewed by at least three peers. Top-tier conferences have acceptance rates comparable to or even lower than leading journals.
-\item Citations (\mygooglescholar{}): 3282, h-index 16, i10-index 22 (as of Dec'22).  
+\item Citations (\mygooglescholar{}): 3299, h-index 16, i10-index 22 (as of Dec'22).  
 \end{itemize}
 
 \emergencystretch=1em
@@ -230,6 +240,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \newcommand{\myconfs}{
   \begin{enumerate}[label=C\arabic*]
 
+    \mypubc{phan2023challenges}{33\%}
     \mypubc{brida2022icebar}{14\%}
     \mypubc{zheng2022atr}{14\%}
     \mypubc{nguyen2022analyzing}{33\%}
@@ -391,6 +402,9 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \begin{enumerate}[label=T\arabic*]
 
   \mypubcc{nguyen2014automating}
+  \begin{itemize}
+  \item \textbf{Pass with Distinction}
+  \end{itemize}
   \mypubcc{nguyen2006graph}
   
 \end{enumerate}
@@ -406,58 +420,55 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \subsection{Research Funding Record}
 
-\subsubsection{Internally Funded Grants}
-\begin{table}[htbp]
-  \caption{\label{tab:internalfunding}Summary of Internally Research Funding.}
-  \small
-  \centering
-  \begin{tabular}{lllrll}
-    \toprule
-    Project & Sponsor & Role & Dates & Total & My Portion\\
-    \midrule
-    Analyzing Configurable Software   & UNL Seed Award & PI & 2021--2021 & \$10K & 100\% (\$10K)\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{enumerate}
-\item ``Analyzing Highly-Configurable System'', UNL, 1/1/2021--12/31/2021, \$10K (total, sole PI). PI: Nguyen.
-  \begin{description}
-  \item[Description] We proposed to develop static, symbolic, and dynamic techniques to formally reason about highly-configurable systems.  
-  \end{description}
-\end{enumerate}
-
 \subsubsection{Externally Funded Grants}
 
 \begin{table}[htbp]
   \caption{\label{tab:externalfunding}Summary of Externally Research Funding.}
   \small
   \centering
-  \begin{tabular}{lllrll}
+  \begin{tabular}{lllrrr}
     \toprule
-    Project & Sponsor & Role & Dates & Total & My Portion\\
+    \textbf{Project} & \textbf{Sponsor} & \textbf{Role} & \textbf{Dates} & \textbf{Total} & \textbf{My Portion}\\
     \midrule
-    Analysis of CMake Build files & Facebook & PI & 2021-- & \$30K & 100\% (\$30K)\\
-    Using Symbolic Execution &&&&&\\
+    CAREER: DNN Verification & NSF & PI & 2023--2028 & \$511K & \$511K (100\%)\\
     \midrule
-    Analyzing Liveness Properties & NSF & PI & 2021--2024 & \$1.2M & 33\% (\$400K)\\
+    Symbolic Analysis of CMake files & Facebook & PI & 2021--2022 & \$30K & \$30K (100\%)\\
     \midrule
-    Analyzing Linux & NSF & PI & 2020--2022 & \$175K & 100\% (\$175K)\\
-    KBuild Makefiles &  &  &  &  & \\
-    REU Support & NSF & PI & 2021--2022 & \$16K & 100\% (\$16K)\\
+    Medium: Analyzing Liveness Properties & NSF & PI & 2021--2024 & \$1.2M & \$400K (33\%)\\
     \midrule
-    Predictive Failure Avoidance & Army Research Office & Co-PI & 2019--2021 & \$550K & 29\% (\$160K)\\
+    CRII: Analyzing Linux Kbuild Makefiles& NSF & PI & 2020--2022 & \$175K &  \$175K (100\%)\\
+    REU Support & NSF & PI & 2021--2022 & \$16K & \$16K (100\%)\\
+    \midrule
+    Predictive Failure Avoidance & Army (ARO) & Co-PI & 2019--2021 & \$550K & \$160K (29\%)\\
+    \bottomrule
+    Total & & & & \$2.5M & \$1.3M\\
     \bottomrule
   \end{tabular}
 \end{table}
 
 \begin{enumerate}
+  \mygrant{nsf2023neuralsat}  
   \mygrant{fb2022cmake}
   \mygrant{nsf2022dtemporal}
   \mygrant{nsf2020kbuild}
   \mygrant{aro2018predict}
 
 \end{enumerate}
+
+\subsubsection{Internally Funded Grants}
+\begin{table}[htbp]
+  \caption{\label{tab:internalfunding}Summary of Internally Research Funding.}
+  \small
+  \centering
+  \begin{tabular}{lllrrr}
+    \toprule
+    \textbf{Project} & \textbf{Sponsor} & \textbf{Role} & \textbf{Dates} & \textbf{Total} & \textbf{My Portion}\\
+    \midrule
+    ``Analyzing Highly-Configurable System''  & UNL Seed Award & PI & 2021--2021 & \$10K & \$10K (100\%)\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 
 
 \coe{
@@ -469,20 +480,14 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \subsection{Research Awards and Patents}
 
 
-\subsubsection{Patents}
-\begin{enumerate}
-\item ``FLACK: Counterexample-Guided Fault Localization for Alloy Models''\hfill \textbf{pending}
-  \begin{description}
-    \item Filed with U.S. Patent and Trademark Office in 8/2021, serial\# 63/233,181
-  \end{description}
-\end{enumerate}
-
-\subsubsection{Research Awards and Recognition (International and National)}
+\subsubsection{Research Awards and Recognition}
 
 \begin{enumerate}
-\item NSF CISE Career Research Initiation Initiative Award (\textbf{CRII})\hfill 2020
+\item \textbf{Faculty Early Career Development Award (CAREER)}, NSF\hfill 2023
+
+\item \textbf{Career Research Initiation Initiative Award (CRII)}, NSF\hfill 2020
   
-\item \textbf{10-year Most Influential Paper Award}, ACM/SIGSOFT and IEEE/TCSE\hfill 2019
+\item \href{https://www.sigsoft.org/awards/icseMIPAward.html}{\textbf{10-year Most Influential Paper Award}}, ACM/SIGSOFT and IEEE/TCSE\hfill 2019
   \begin{description}
   \item Award given for my paper~\ref{weimer2009automatically} presented at the International Conference on Software Engineering in 2009
   \end{description}
@@ -495,7 +500,11 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \item  Sigma Xi Award for Excellence in Research, UNM\hfill 2014
   \begin{description}
-  \item Voted on by the faculty of the College of Engineering at the University of New Mexico-Albuquerque. Awarded annually to one student with outstanding research record
+  \item Voted on by the faculty of the College of Engineering at the University of New Mexico-Albuquerque. Awarded annually to \emph{one student} with outstanding research record
+  \end{description}
+\item Dean's Dissertation Fellowship, \$8K, UNM\hfill 2012--2013
+  \begin{description}
+  \item Voted on by the faculty of UNM. Awarded annually to \emph{two graduating students} based on academic achievements
   \end{description}
 
 \item Distinguished Paper Award~[\ref{nguyen2012using}], International Conference on Software Engineering\hfill 2012
@@ -523,17 +532,23 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \end{description}
 \end{enumerate}
 
+\subsubsection{Patents}
+\begin{enumerate}
+\item ``FLACK: Counterexample-Guided Fault Localization for Alloy Models''\hfill \textbf{pending}
+  \begin{description}
+    \item Filed with U.S. Patent and Trademark Office in 8/2021, serial\# 63/233,181
+  \end{description}
+\end{enumerate}
+
+
+
 \subsection{Other Research Accomplishments}
 \begin{itemize}
-\item Dean's Dissertation Fellowship, UNM, \$8K\hfill 2012--2013
-  \begin{description}
-  \item Voted on by the faculty. Awarded annually to two graduating students based on academic achievements
-  \end{description}
 \item Walter Karplus Research Grant, \$2.3K, IEEE Computational Intelligence Society\hfill 2009 
   \begin{description}
   \item Summer scholarship funding for graduate students with promising research projects
   \end{description}
-\item Space Grant Fellowship, \$15K, NASA\hfill 2008--2009 
+\item Space Grant Fellowship, \$15K, NASA\hfill 2008--2010 
 \end{itemize}
 
 \section{Teaching \coe{Accomplishments}}
@@ -590,7 +605,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 % }
 
 \newcommand{\linhan}{
-\item Linhan Li \notcoe{(Ph.D.)}\hfill Spring 2021--current
+\item Linhan Li \notcoe{(Ph.D. student)}\hfill Spring 2021--current
 }
 
 
@@ -599,15 +614,15 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \item \href{https://ndkimhao.github.io}{KimHao Nguyen} \notcoe{(Undergraduate)}\hfill Spring 2020--current 
   \begin{itemize}
   \item \textbf{Outstanding Undergraduate Research Assistant} award\hfill Spring 2021
-  \item Winner, College of Arts and Science, Nebraska Student Research Days (for the GenTree work~\ref{nguyen2021gentree})\hfill Spring 2021
-  \item UCARE award and paid hourly through research grants
+  \item \textbf{Winner}, College of Arts and Science, Nebraska Student Research Days (for GenTree~\ref{nguyen2021gentree})\hfill Spring 2021
+  \item UCARE award and paid hourly through NSF grants
   \item Garmin Computer Engineering scholarship
   \item Co-author of~\ref{nguyen2022analyzing},~\ref{ishimwe2022dynaplex},~\ref{nguyen2022syminfer},~\ref{ishimwe2021dynaplex},~\ref{nguyen2021gentree},~\ref{nguyen2021tool},~\ref{nguyen2020using2},~\ref{nguyen2021using}
   \end{itemize}
 }
 
 \newcommand{\alex}{
-\item Alexey Malyshev (UNL), Fulbright scholarship\hfill  graduated: Spring 2021
+\item Alexey Malyshev (M.S., UNL), Fulbright scholarship\hfill  graduated: Spring 2021
   \begin{itemize}
   \item First job: Oracle
   \item Co-author of~\ref{nguyen2020using}
@@ -632,7 +647,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 
 \newcommand{\haiduong}{
-\item Hai Duong \notcoe{(Ph.D. student)}\hfill
+\item Hai Duong \notcoe{(Ph.D. student)}\hfill Fall 2022--current
   \begin{itemize}
     \item Co-author of~\ref{nguyen2022syminfer}
   \end{itemize}
@@ -717,9 +732,9 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \begin{enumerate}
     \guolong{}
     \alex{}
-  \item Mitch Girrard (UNL), co-advised with Matthew Dwyer\hfill graduated: Fall 2019
+  \item Mitch Girrard (M.S., UNL), co-advised with Matthew Dwyer\hfill graduated: Fall 2019
     \begin{itemize}
-    \item continued on Ph.D. program at UVA
+    \item Continued on Ph.D. program at UVA
     \end{itemize}
     
     \item \textbf{Undergraduate Research}: Max Nguyen (UCARE), Linhan Li (UCARE, continued on Ph.D. program at GMU), Quan Nguyen (UCARE), Ben Galusha (NSF REU), Ethan Butt (Honor Thesis), Conner Hallett (UCARE), Chase Pearson, Nancy Pham, Zixuan Hao.
@@ -736,43 +751,38 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 
 \section{Service \coe{Accomplishments}}
 \subsection{Professional Service}
+\subsubsection{Conference Committee Members (International)}
+
+\begin{description}
+\item PC: Program Committee
+\end{description}
+
+\begin{enumerate}
+\item PC,  International Symposium on Software Testing and Analysis (ISSTA)\hfill 2023  
+\item PC, Java PathFinder Workshop (JPF)\hfill 2022
+\item Proceedings Co-Chair,  International Conference of Software Engineering (ICSE)\hfill 2022
+\item PC, Automated Software Engineering (ASE)\hfill 2020
+\item New Faculty Symposium Panel, International Conference of Software Engineering (ICSE)\hfill 2020
+\item PC, International Conference of Software Engineering Demo Track (ICSE DEMO)\hfill 2020
+\item PC, International Conference of Software Engineering Posters Track (ICSE Posters)\hfill 2020
+\item PC, Genetic Improvement Workshop\hfill 2020
+\item PC, Java PathFinder Workshop (JPF)\hfill 2019
+\item PC, Foundation of Software Engineering (FSE)\hfill 2019
+\item PC, Automated Software Engineering (ASE), Journal First PC\hfill 2019
+\item PC, Automated Software Engineering (ASE)\hfill 2018
+\item PC, Foundation of Software Engineering (FSE)\hfill 2018
+\item Challenge Track Program Committee, Systems and Software Product Line (SPLC)\hfill 2018
+\item PC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2018
+\item External Review Committee, Programming Language Design and Implementation (PLDI)\hfill 2018
+\item PC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2017
+\item PC, Genetic Improvement Workshop\hfill 2017
+\item Artifact Evaluation Committee, Principles of Programming Languages (POPL)\hfill 2017
+\item PC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2016
+\end{enumerate}
+
 \subsubsection{Journal Editorships}
 \begin{enumerate}
 \item Editor Board, Journal of Systems and Software\hfill 2017--2021
-\end{enumerate}
-\subsubsection{Journals Reviewers}
-\begin{description}
-\item Reviewer for  Transactions on Software Engineering (TSE), Journal of Systems and Software (JSS), Transactions on Software Engineering and Methodology (TOSEM), Journal of Symbolic Computation, Journal of Evolutionary Intelligence, Transactions on Evolutionary Computation,. Average: 5 journal papers reviewed per year 
-\end{description}
-
-\subsubsection{Conference Committee Members (International)}
-
-\paragraph{Notes:}
-\begin{itemize}
-\item[] TPC: Technical Program Committee
-\end{itemize}
-
-\begin{enumerate}
-\item TPC,  International Symposium on Software Testing and Analysis (ISSTA)\hfill 2023  
-\item TPC, Java PathFinder Workshop (JPF)\hfill 2022
-\item Proceedings Co-Chair,  International Conference of Software Engineering (ICSE)\hfill 2022
-\item TPC, Automated Software Engineering (ASE)\hfill 2020
-\item New Faculty Symposium Panel, International Conference of Software Engineering (ICSE)\hfill 2020
-\item Demo Program Committee, International Conference of Software Engineering (ICSE)\hfill 2020
-\item Poster Program Committee, International Conference of Software Engineering (ICSE)\hfill 2020
-\item TPC, Genetic Improvement Workshop\hfill 2020
-\item TPC, Java PathFinder Workshop (JPF)\hfill 2019
-\item TPC, Foundation of Software Engineering (FSE)\hfill 2019
-\item TPC, Automated Software Engineering (ASE), Journal First PC\hfill 2019
-\item TPC, Automated Software Engineering (ASE)\hfill 2018
-\item TPC, Foundation of Software Engineering (FSE)\hfill 2018
-\item Challenge Track Program Committee, Systems and Software Product Line (SPLC)\hfill 2018
-\item TPC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2018
-\item External Review Committee, Programming Language Design and Implementation (PLDI)\hfill 2018
-\item TPC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2017
-\item TPC, Genetic Improvement Workshop\hfill 2017
-\item Artifact Evaluation Committee, Principles of Programming Languages (POPL)\hfill 2017
-\item TPC, Formal Methods and Models for System Design (MEMOCODE)\hfill 2016
 \end{enumerate}
 
 \subsubsection{Conference Committee Member (Regional)}
@@ -793,10 +803,15 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 }
 
 
+\subsubsection{Journals Reviewers}
+\begin{description}
+\item Reviewer for  Transactions on Software Engineering (TSE), Journal of Systems and Software (JSS), Transactions on Software Engineering and Methodology (TOSEM), Journal of Symbolic Computation, Journal of Evolutionary Intelligence, Transactions on Evolutionary Computation,. Average: 5 journal papers reviewed per year 
+\end{description}
+
 
 \subsubsection{Research Review Panelists}
 \begin{enumerate}
-\item Panelist, NSF Proposal Review Panel\hfill 2022, 2020, 2019
+\item Panelist, NSF Proposal Review Panel\hfill 2022, 2020 (twice), 2019
 \end{enumerate}
 
 
@@ -804,7 +819,7 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
 \newcommand{\myunitservices}{
 \item Member, GMU CS Executive Committee\hfill 2022--    
 \item Member, GMU CS Web Committee\hfill 2022--  
-\item Member, GMU CS Graduate Admission\hfill 2021--
+\item Member, GMU CS Ph.D. Committee\hfill 2021--
 \item Member, UNL CSE Graduate CS Program Committee\hfill 2020--2021  
 \item Member, UNL CSE General Search Committee\hfill 2019--2020
 \item Member, UNL CSE Awards Committee\hfill 2018--2019
@@ -854,5 +869,6 @@ He is a recipient of the NSF CISE Career Research Initiation Initiative (CRII) A
   \item \myname{} $\leftrightarrow$ Stephanie Forrest (Ph.D. Advisor)    $\leftrightarrow$ John Holland $\leftrightarrow$  Arthur Burks $\leftrightarrow$ Cooper Langford  $\leftrightarrow$ Edwin Boring $\leftrightarrow$ Edward Titchener  $\leftrightarrow$ $\dots$
   \end{itemize}
 \end{itemize}
+\updateinfo{}
 }
 \end{document}
